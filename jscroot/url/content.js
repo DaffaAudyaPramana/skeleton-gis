@@ -49,7 +49,7 @@ export function getContentURL(){
         case "notifications/geonearsphere":
             return url.template.content + "notifications/geonearsphere.html";
         case "notifications/geomaxdistence":
-            return url.template.content + "notifications/geomaxdistence.html";
+            return url.template.content + "notifications/geomaxdistance.html";
         case "notifications/geomindistance":
             return url.template.content + "notifications/geomindistance.html";
         case "notifications/geometry":
@@ -91,27 +91,27 @@ export function getURLContentJS(){
             return url.view.content+"logout.js";
         case "crud/get":
             return url.template.content+"geojson/table.html";
-            case "map/ch1":
+        case "map/ch1":
                 return url.template.content+"geojson/ch1.html";
-            case "map/ch2":
+        case "map/ch2":
                 return url.template.content+"geojson/ch2.html";
-            case "map/ch3":
+        case "map/ch3":
                 return url.template.content+"geojson/ch3.html";
-            case "map/ch4":
+        case "map/ch4":
                 return url.template.content+"geojson/ch4.html";
-            case "notifications/geointersect":
+        case "notifications/geointersect":
                 return url.template.content + "notifications/geointersect.html";
-            case "notifications/geowithin":
+        case "notifications/geowithin":
                 return url.template.content + "notifications/geowithin.html";
-            case "notifications/geonear":
+        case "notifications/geonear":
                 return url.template.content + "notifications/geonear.html";
-            case "notifications/geonearsphere":
+        case "notifications/geonearsphere":
                 return url.template.content + "notifications/geonearsphere.html";
-            case "notifications/geomaxdistence":
-                return url.template.content + "notifications/geomaxdistence.html";
-            case "notifications/geomindistance":
+        case "notifications/geomaxdistance":
+                return url.template.content + "notifications/geomaxdistance.html";
+        case "notifications/geomindistance":
                 return url.template.content + "notifications/geomindistance.html";
-            case "notifications/geometry":
+        case "notifications/geometry":
                 return url.template.content + "notifications/geometry.html";
             default:
                 return url.view.content+"home.js";
