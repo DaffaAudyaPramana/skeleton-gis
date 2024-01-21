@@ -33,13 +33,13 @@ export function getContentURL(){
         case "crud/get":
             return url.template.content+"geojson/table.html";
         case "map/ch1":
-            return url.template.content+"geojson/ch1.html";
+            return url.template.content+"geojson/ch1/index.html";
         case "map/ch2":
-            return url.template.content+"geojson/ch2.html";
+            return url.template.content+"geojson/ch2/index.html";
         case "map/ch3":
-            return url.template.content+"geojson/ch3.html";
+            return url.template.content+"geojson/ch3/index.html";
         case "map/ch4":
-            return url.template.content+"geojson/ch4.html";
+            return url.template.content+"geojson/ch4/index.html";
         case "notifications/geointersect":
             return url.template.content + "notifications/geointersect.html";
         case "notifications/geowithin":
@@ -92,13 +92,13 @@ export function getURLContentJS(){
         case "crud/get":
             return url.template.content+"geojson/table.html";
         case "map/ch1":
-            return url.template.content+"geojson/ch1.html";
+            return url.template.content+"geojson/ch1/script.js";
         case "map/ch2":
-            return url.template.content+"geojson/ch2.html";
+            return url.template.content+"geojson/ch2/js/script.js";
         case "map/ch3":
-            return url.template.content+"geojson/ch3.html";
+            return url.template.content+"geojson/ch3/js/script.js";
         case "map/ch4":
-            return url.template.content+"geojson/ch4.html";
+            return url.template.content+"geojson/ch4/js/script.js";
         case "notifications/geointersect":
             return url.template.content + "notifications/geointersect.html";
         case "notifications/geowithin":
