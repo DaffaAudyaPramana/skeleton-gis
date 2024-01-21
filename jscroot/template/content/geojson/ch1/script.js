@@ -5,7 +5,7 @@ export function main() {
         const coordinatesCell = row.insertCell(1);
         const typeCell = row.insertCell(2);
 
-        nameCell.innerText = feature.properties.name;
+        nameCell.innerText = feature.properties.Point;
         coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
         typeCell.innerText = feature.geometry.type;
     }
