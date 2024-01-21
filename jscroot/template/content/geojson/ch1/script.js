@@ -6,6 +6,8 @@ export function main() {
         const typeCell = row.insertCell(2);
 
         nameCell.innerText = feature.properties.Point;
+        nameCell.innerText = feature.properties.Alamat;
+        nameCell.innerText = feature.properties.Jalan;
         coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
         typeCell.innerText = feature.geometry.type;
     }
