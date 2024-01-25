@@ -1,5 +1,4 @@
-export let URLGeoJson =
-  "https://asia-southeast2-daffaaudya.cloudfunctions.net/getdatajson";
+export let URLGeoJson = "https://asia-southeast2-daffaaudya.cloudfunctions.net/getdatajson";
 export let tableTag = "tr";
 export let tableRowClass = "content is-small";
 export let tableTemplate = `
