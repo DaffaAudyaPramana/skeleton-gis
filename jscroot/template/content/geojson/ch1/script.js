@@ -8,6 +8,13 @@ export function main() {
         nameCell.innerText = feature.properties.Point;
         coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
         typeCell.innerText = feature.geometry.type;
+
+        // Check for properties and set nameCell accordingly
+        if (feature.properties.Alamat) {
+            nameCell.innerText = feature.properties.Alamat;
+        } else if (feature.properties.Jalan) {
+            nameCell.innerText = feature.properties.Jalan;
+        }
     }
 
     const pointTable = document.getElementById("pointTable").getElementsByTagName('tbody')[0];
