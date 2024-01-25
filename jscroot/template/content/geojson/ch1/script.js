@@ -5,12 +5,13 @@ export function main() {
         const coordinatesCell = row.insertCell(1);
         const typeCell = row.insertCell(2);
 
-        nameCell.innerText = feature.properties.Point;
         coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
         typeCell.innerText = feature.geometry.type;
 
         // Check for properties and set nameCell accordingly
-        if (feature.properties.Alamat) {
+        if (feature.properties.Alamat && feature.properties.Jalan) {
+            nameCell.innerText = `${feature.properties.Alamat}, ${feature.properties.Jalan}`;
+        } else if (feature.properties.Alamat) {
             nameCell.innerText = feature.properties.Alamat;
         } else if (feature.properties.Jalan) {
             nameCell.innerText = feature.properties.Jalan;
