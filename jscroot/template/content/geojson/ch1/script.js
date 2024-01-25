@@ -9,9 +9,9 @@ export function main() {
         if (feature.properties.Alamat && feature.properties.Jalan) {
             nameCell.innerText = `${feature.properties.Point}, ${feature.properties.Alamat}, ${feature.properties.Jalan}`;
         } else if (feature.properties.Alamat) {
-            nameCell.innerText = `${feature.properties.Point}, ${feature.properties.Alamat}`;
+            nameCell.innerText = `${feature.properties.Alamat}`;
         } else if (feature.properties.Jalan) {
-            nameCell.innerText = `${feature.properties.Point}, ${feature.properties.Jalan}`;
+            nameCell.innerText = `${feature.properties.Jalan}`;
         } else {
             nameCell.innerText = feature.properties.Point;
         }
